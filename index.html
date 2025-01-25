@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css"> <!-- Make sure your index.css exists -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #heading {
+            text-align: center;
+            padding: 20px;
+        }
+        .domains-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .domains {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .horizontal1, .horizontal2 {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        article {
+            margin: 10px;
+            text-align: center;
+        }
+        article img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+        }
+        article h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div id="heading">
@@ -15,21 +60,33 @@
                 <div class="horizontal1">
                     <article>
                         <h2>Pants</h2>
-                        <a class="pants_link" href="///C:/aashna/6th%20sem/wp%20lab/lab%202/pants.html"><img src="https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw78930326/product_images/0850436750208NEW_02_020.jpg?sw=2000"></a>
+                        <!-- Change the local file path to a relative one -->
+                        <a class="pants_link" href="pants.html">
+                            <img src="https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw78930326/product_images/0850436750208NEW_02_020.jpg?sw=2000" alt="Pants">
+                        </a>
                     </article>    
                     <article>
                         <h2>Tops</h2>                        
-                        <a class="pants_link" href="///C:/aashna/6th%20sem/wp%20lab/lab%202/tops.html"><img src="https://img01.ztat.net/article/spp-media-p1/f5ea9fba22ea406b9e9f9d8127f657cd/a430e15b0a51482d870674fdb5c0f66b.jpg?imwidth=400"></a>
+                        <!-- Change the local file path to a relative one -->
+                        <a class="pants_link" href="tops.html">
+                            <img src="https://img01.ztat.net/article/spp-media-p1/f5ea9fba22ea406b9e9f9d8127f657cd/a430e15b0a51482d870674fdb5c0f66b.jpg?imwidth=400" alt="Tops">
+                        </a>
                     </article>            
                 </div>
                 <div class="horizontal2">
                     <article>
                         <h2>Skirts</h2>
-                        <a class="skirts_link" href="///C:/aashna/6th%20sem/wp%20lab/lab%202/skirts.html"><img src="https://i.pinimg.com/originals/25/4e/5d/254e5d592386717adfd9e223d24e1bb8.jpg"></a>
+                        <!-- Change the local file path to a relative one -->
+                        <a class="skirts_link" href="skirts.html">
+                            <img src="https://i.pinimg.com/originals/25/4e/5d/254e5d592386717adfd9e223d24e1bb8.jpg" alt="Skirts">
+                        </a>
                     </article>    
                     <article>
                         <h2>Dresses</h2>                        
-                        <a class="pants_link" href="///C:/aashna/6th%20sem/wp%20lab/lab%202/dresses.html"><img src="https://www.lulus.com/images/product/xlarge/4479690_312682.jpg?w=560"></a>
+                        <!-- Change the local file path to a relative one -->
+                        <a class="pants_link" href="dresses.html">
+                            <img src="https://www.lulus.com/images/product/xlarge/4479690_312682.jpg?w=560" alt="Dresses">
+                        </a>
                     </article>               
                 </div>
             </section>
